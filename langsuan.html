@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- tailwindcss -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- line seed font -->
+    <link rel="stylesheet" href="https://bit.ly/3CZa0Sz" type="text/css" charset="utf-8" />
+    <link rel="stylesheet" href="./ani/ani.css">
+    <title>Lang Suan district</title>
+</head>
+
+<style>
+    * {
+        font-family: 'line_seed_sans_th';
+        scroll-behavior: smooth;
+    }
+</style>
+
+<body id="top" class="bg-stone-300">
+
+    <!-- header -->
+    <div class="sticky top-0" style="z-index: 11111111111111;">
+        <nav class="flex justify-between items-center backdrop-blur-sm h-16 px-8 mx-auto w-100 bg-stone-400/50 z-40 ">
+            <a class="text-xl font-bold hover:underline" href="#top">อำเภอหลังสวน</a>
+            <div class="flex-wrap items-center hidden md:flex">
+                <a class="text-xl px-4 hover:underline" href="#knowlage">เรื่องน่ารู้</a>
+                <a class="text-xl px-4 hover:underline" href="#where">เที่ยวไหนดี?</a>
+                <a class="text-xl px-4 hover:underline" href="#map">แผนที่</a>
+                <a class="text-xl px-4 hover:underline" href="./">กลับเว็บหลัก</a>
+            </div>
+            <button onclick="Mmenu()" class="md:hidden"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></button>
+        </nav>
+    
+        <div id="mmenu" class="m-menu backdrop-blur-sm bg-stone-500/70 md:hidden hidden">
+            <div class="px-4 py-4">
+                <a class="px-4 text-xl py-2 my-2 rounded-lg hover:underline block hover:bg-stone-400" href="#knowlage">เรื่องน่ารู้</a>
+                <a class="px-4 text-xl py-2 my-2 rounded-lg hover:underline block hover:bg-stone-400" href="#where">เที่ยวไหนดี?</a>
+                <a class="px-4 text-xl py-2 my-2 rounded-lg hover:underline block hover:bg-stone-400" href="#map">แผนที่</a>
+                <a class="px-4 text-xl py-2 my-2 rounded-lg hover:underline block hover:bg-stone-400" href="./">กลับเว็บหลัก</a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="bg-stone-300 ">
+        <!-- hero -->
+        <div class="hero flex flex-wrap">
+            <div class="w-full py-20 lg:px-16 lg:w-2/5">
+                <p class="flex text-xl justify-center items-center lg:justify-start pb-4"><svg class="pr-1"
+                        xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
+                        class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg> อำเภอหลังสวน จังหวัดชุมพร</p>
+                <h1 class="text-6xl md:text-7xl text-center lg:text-start">
+                    <span class="font-bold">
+                        Langsuan
+                    </span> District
+                </h1>
+                <div class="flex pt-7 justify-center lg:justify-start">
+                    <a class="px-8 py-2 bg-black text-white rounded-full hover:bg-black/0 hover:text-black border-2 border-black"
+                        href="#knowlage">เรียนรู้เพิ่มเติม</a>
+                    <a class="px-6 py-2 flex items-center" href="#where"><svg class="mr-2" xmlns="http://www.w3.org/2000/svg"
+                            width="16" height="16" fill="currentColor" class="bi bi-car-front-fill" viewBox="0 0 16 16">
+                            <path
+                                d="M2.52 3.515A2.5 2.5 0 0 1 4.82 2h6.362c1 0 1.904.596 2.298 1.515l.792 1.848c.075.175.21.319.38.404.5.25.855.715.965 1.262l.335 1.679c.033.161.049.325.049.49v.413c0 .814-.39 1.543-1 1.997V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.338c-1.292.048-2.745.088-4 .088s-2.708-.04-4-.088V13.5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1-.5-.5v-1.892c-.61-.454-1-1.183-1-1.997v-.413a2.5 2.5 0 0 1 .049-.49l.335-1.68c.11-.546.465-1.012.964-1.261a.807.807 0 0 0 .381-.404l.792-1.848ZM3 10a1 1 0 1 0 0-2 1 1 0 0 0 0 2Zm10 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM6 8a1 1 0 0 0 0 2h4a1 1 0 1 0 0-2H6ZM2.906 5.189a.51.51 0 0 0 .497.731c.91-.073 3.35-.17 4.597-.17 1.247 0 3.688.097 4.597.17a.51.51 0 0 0 .497-.731l-.956-1.913A.5.5 0 0 0 11.691 3H4.309a.5.5 0 0 0-.447.276L2.906 5.19Z" />
+                        </svg><span class="underline">เที่ยวไหนดี</span></a>
+                </div>
+            </div>
+            <div
+                class="hidden lg:block w-full md:w-3/5 min-h-full bg-center bg-[url('./image/langsuan-transtation.jpg')] ">
+            </div>
+        </div>
+
+        <div>
+            <div class="grid lg:grid-cols-2 grid-flow-row-dense">
+                <div class=" bg-cover bg-no-repeat bg-[url('./image/paknum.jpg')]">
+                    <a target="_blank" href="https://th.wikipedia.org/wiki/%E0%B8%AD%E0%B8%B3%E0%B9%80%E0%B8%A0%E0%B8%AD%E0%B8%AB%E0%B8%A5%E0%B8%B1%E0%B8%87%E0%B8%AA%E0%B8%A7%E0%B8%99"
+                        class="hover:underline backdrop-brightness-50 text-white text-5xl flex items-center justify-center py-12 font-bold">
+                        หลังสวน
+                    </a>
+                </div>
+                <div class=" bg-cover bg-no-repeat bg-[url('./image/fruit.jpg')]">
+                    <a target="_blank" href="https://travel.trueid.net/detail/G15MMYlOg4D1"
+                        class="hover:underline backdrop-brightness-50 text-white text-5xl flex items-center justify-center py-12 font-bold">
+                        เมืองผลไม้
+                    </a>
+                </div>
+            </div>
+            <div class="grid lg:grid-cols-3 grid-flow-row-dense">
+                <div class=" bg-cover bg-no-repeat bg-[url('./image/ship-race.jpg')]">
+                    <a target="_blank" href="https://www.nairobroo.com/travel/lang-suan-boat-race/"
+                        class="hover:underline backdrop-brightness-50 text-white text-5xl flex items-center justify-center py-12 font-bold">
+                        พายเรือแข่ง
+                    </a>
+                </div>
+                <a target="_blank" href="https://www.otoptoday.com/view_product.php?product_id=21030" class=" bg-cover bg-no-repeat bg-[url('./image/durean-kuarn.jpg')]">
+                    <div
+                        class="hover:underline backdrop-brightness-50 text-white text-5xl flex items-center text-center justify-center py-12 font-bold">
+                        แหล่งทุเรียนกวน
+                    </div>
+                </a>
+                <div class=" bg-cover bg-no-repeat bg-[url('./image/suansomdet.jpg')]">
+                    <a target="_blank" href="https://goo.gl/maps/JNkHzmMpHYG2vMfR7"
+                        class="hover:underline backdrop-brightness-50 text-white text-5xl flex items-center justify-center py-12 font-bold">
+                        สวนสมเด็จ
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="bg-stone-400">
+            <div id="knowlage" class="max-w-6xl text-white mx-auto ani py-20 px-5 lg:px-0 ">
+                <h2
+                    class="text-black text-center text-4xl lg:text-6xl font-bold mb-20 px-5 py-5 bg-stone-300 rounded-full">
+                    เรื่องน่ารู้ของหลังสวน</h2>
+                <button onclick="acri()"
+                    class="w-full flex justify-between items-center text-2xl text-black bg-stone-300 px-7 h-16 border-b-2 border-black rounded-t-lg">
+                    <h3>ทำไมต้องชื่อ "หลังสวน"</h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </button>
+                <div id="acri" class="block">
+                    <p class="w-full text-2xl text-black bg-stone-300 px-7 py-7 border-b-2 border-black ">
+                        ชื่อที่เรียกยังหาความหมายไม่ได้ว่ามีความหมายว่าอะไรแน่
+                        แต่เพราะเมืองหลังสวนเป็นท้องที่ที่มีผลไม่มากแห่งหนึ่ง กระทรวงคมนาคมจึงสันนิษฐานว่า คำว่า
+                        ”หลังสวน” เพี้ยนมาจากคำว่า ”รังสวน” หรือ “คลังสวน” ปี พ.ศ.2427 รัชกาลที่5
+                        โปรดเกล้าฯให้ยกฐานะเมืองหลังสวนเป็นเมืองจัตวาขึ้นตรงต่อกรุงเทพฯ โดยมีพระจรูญราชโภคากร (คอซิมเต็ก
+                        ณ ระนอง) เป็นผู้ว่าราชการเมืองหลังสวนคนแรก วันที่ 13 กันยายน พ.ศ. 2449 ถึงปี พ.ศ. 2459 รัชกาลที่
+                        5 โปรดเกล้าฯให้ปรับปรุงรูปแบบการบริหารราชการใหม่เป็นส่วนกลาง ส่วนภูมิภาค ส่วนท้องถิ่น (ตาม
+                        พ.ร.บ.ลักษณะปกครองท้องที่ พ.ศ.2457) จึงได้เปลี่ยนจากเมือง หลังสวนเป็น "จังหวัดหลังสวน"
+                    </p>
+                </div>
+                <button onclick="acrii()"
+                    class="w-full flex justify-between items-center text-2xl text-black bg-stone-300 px-7 h-16 border-b-2 border-black">
+                    <h3 class="text-start">ลักษณะภูมิประเทศ เป็นอย่างไร</h3><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </button>
+                <div id="acrii" class="hidden">
+                    <p class="w-full text-2xl text-black bg-stone-300 px-7 py-7 border-b-2 border-black ">
+                        พื้นที่ส่วนใหญ่เป็นป่าและเขา
+                        มีที่ราบตามเชิงเขาและริมฝั่งแม่น้ำที่ราบกว้างใหญ่บริเวณอื่นมีน้อยแห่ง
+                        ลักษณะพื้นที่ส่วนใหญ่เหมาแก่การเพาะปลูก เช่น ทำสวนผลไม้และยางพารา ทำนามีน้อย
+                        ไม่เพียงพอต่อการบริโภคในอำเภอ
+                        แต่ปลูกผลไม้ยืนต้นมากบริเวณที่เป็นป่าและเขาอุดมไปด้วยป่าไม้เบญจพรรณ
+                    </p>
+                </div>
+                <button onclick="acriii()" id="aiii"
+                    class="w-full flex justify-between items-center text-2xl text-black bg-stone-300 px-7 h-16 border-b-2 border-black rounded-b-lg">
+                    <h3>ลักษณะภูมิอากาศหละ?</h3><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z" />
+                    </svg>
+                </button>
+                <div id="acriii" class="hidden">
+                    <p class="w-full text-2xl text-black bg-stone-300 px-7 py-7 border-b-2 border-black rounded-b-lg">
+                        ฝนตกสม่ำเสมอเกือบตลอดปี และจะตกชุกในช่วงเดือนมิถุนายน ถึง เดือนธันวาคม
+                        อากาศร้อนระหว่างเดือนมีนาคมถึงเดือนพฤษภาคม ส่วนระหว่างเดือนมกราคมถึงเดือนกุมภาพันธ์
+                        อากาศอบอุ่นและบางปีค่อนข้างหนาว
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-4 bg-stone-300 py-20 max-w-6xl mx-auto ani" id="where">
+            <h2 class="text-black text-center text-3xl lg:text-6xl font-bold ">หลังสวน เที่ยวไหนดี?</h2>
+            <div class="flex flex-wrap justify-center items-center mt-16">
+                <button onclick="showran()" id="ranbtn"
+                    class="block lg:text-6xl bg-stone-500 text-white lg:px-16 lg:py-5 px-8 py-4 hover:border-2 lg:border-4 lg:hover:border-4 rounded-full hover:bg-stone-300 border-stone-500 hover:text-stone-500 my-5">สุ่มสถานที่ท่องเที่ยว</button>
+                <div id="ranans" class="hidden">
+                    <h3 id="ranls" class="text-stone-700 text-5xl lg:text-7xl font-bold w-full text-center"></h3>
+                    <div class="flex pt-7 justify-center w-full pb-8">
+                        <a id="urlls"
+                            class="mx-4 px-5 py-2 lg:px-8 py-2 bg-black text-white rounded-full hover:bg-black/0 hover:text-black border-4 border-black lg:text-2xl"
+                            href="" target="_blank">เรียนรู้เพิ่มเติม</a>
+                        <button onclick="ranls()"
+                            class="mx-4 px-5 py-2 lg:px-8 py-2 hover:bg-black hover:text-white rounded-full bg-black/0 text-black border-4 border-black lg:text-2xl hover:underline"
+                            >สุ่มอีกครั้ง</button>
+                    </div>
+                </div>
+                <p class="text-2xl w-full text-center">-หรือ-</p>
+            </div>
+        </div>
+
+        <div class="ani bg-center bg-cover bg-no-repeat bg-[url('./image/suansomdet-2.jpg')]">
+            <a target="_blank" href="https://goo.gl/maps/JNkHzmMpHYG2vMfR7"
+                class="px-4 backdrop-brightness-50 text-white  flex items-center justify-center py-20 flex-wrap text-center">
+                <h3 class="hover:underline text-4xl font-bold w-full pb-4">
+                    สวนสมเด็จพระศรีนครินทร์ชุมพร
+                </h3>
+                <p class="text-xl">ที่สำคัญเป็นที่ประทับของรูปปั้นสมเด็จพระศรีนครินทราบรมราชชนนี ด้านหลังเป็นภูเขา
+                    มีทางเดินขึ้นถ้ำด้วยการตกแต่งราวบันไดเป็นพญานาคยาวไปถึงหน้าถ้ำ</p>
+            </a>
+        </div>
+        <div class="ani bg-center bg-cover bg-no-repeat bg-[url('./image/pitak-island.jpg')]">
+            <a target="_blank" href="https://goo.gl/maps/kimGmPXt6P5mAV4e8"
+                class="px-4 backdrop-brightness-50 text-white  flex items-center justify-center py-20 flex-wrap text-center">
+                <h3 class="hover:underline text-4xl font-bold w-full pb-4">
+                    เกาะพิทักษ์
+                </h3>
+                <p class="text-xl">มีโขดหินสวยงาม น้ำทะเลใส สามารถเล่นน้ำได้และมีหมู่บ้านชาวประมงกระจายอยู่รอบเกาะ
+                    ทางทิศตะวันออกมีหาดทรายขนาดเล็กๆ ด้านหลังเกาะมีจุดชมวิวสูงประมาณ 200 เมตร</p>
+            </a>
+        </div>
+        <div class="ani bg-center bg-cover bg-no-repeat bg-[url('./image/paknum-2.jpg')]">
+            <a target="_blank" href="https://goo.gl/maps/3zagYXxr1jSDojWL8"
+                class="px-4 backdrop-brightness-50 text-white  flex items-center justify-center py-20 flex-wrap text-center">
+                <h3 class="hover:underline text-4xl font-bold w-full pb-4">
+                    ปากน้ำหลังสวน
+                </h3>
+                <p class="text-xl">เรียงรายไปด้วย ร้านอาหารทะเลสดๆ ริมถนนที่ตัดเลียบชายหาดไปตลอดแนวจนสุดที่ตำบลบางน้ำจืด
+                    รวมทั้งรีสอร์ทหลายแห่ง ในบรรยากาศเงียบสงบ และเป็นธรรมชาติ</p>
+            </a>
+        </div>
+
+        <div>
+            <iframe id="map" class="w-full ani"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d251520.44629744886!2d98.89595626455872!3d9.933376600597118!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30567ac0fe05e76f%3A0x30223bc2c368250!2z4Lit4Liz4LmA4Lig4Lit4Lir4Lil4Lix4LiH4Liq4Lin4LiZIOC4iuC4uOC4oeC4nuC4ow!5e0!3m2!1sth!2sth!4v1671892082903!5m2!1sth!2sth"
+                 style="border:0; height: 100vh;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+    </div>
+
+    <div class="footer bg-black flex items-center justify-center text-white py-2">Langsuan By Suwizx</div>
+
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/acr.js"></script>
+    <script src="./ani/ani.js"></script>
+    <script src="./js/randomarr.js"></script>
+    <script src="./js/ranls.js"></script>
+
+
+</body>
+
+</html>
