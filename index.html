@@ -15,18 +15,28 @@
     * {
         font-family: 'line_seed_sans_th';
         scroll-behavior: smooth;
+        transition: .3s;
     }
 </style>
-<body class="bg-neutral-800 h-screen flex items-center justify-center max-w-6xl">
-    <div class="grid grid-cols-2">
-        <a href="./langsuan.html" class="bg-cover bg-no-repeat bg-[url('./image/langsuan-transtation.jpg')] bg-neutral-700 rounded-xl outline-4 outline-white shadow-lg shadow-white hover:shadow-red-500" style="width: 400px; height: 200px;">
-            <div onmouseenter="showLS()" onmouseleave="hideLS()" class="้hover:block hover:bg-neutral-700/40 hover:backdrop-blur-sm h-full w-full rounded-lg flex items-center justify-center">
-                <h2 id="ls" class="font-bold text-3xl text-white hidden">หลังสวน</h2>
+<body class="bg-neutral-800 h-screen flex items-center justify-center max-w-6xl mx-auto">
+    <div class="flex justify-center flex flex-wrap">
+        <a href="./langsuan.html">
+            <div  class="mx-4 my-4 bg-cover bg-no-repeat bg-[url('./image/langsuan-transtation.jpg')] bg-neutral-700 rounded-xl outline-4 outline-white shadow-lg shadow-white hover:shadow-red-500" style="width: 400px; height: 200px;">
+                <div onmouseenter="showLS()" onmouseleave="hideLS()" class="้hover:block hover:bg-neutral-700/40 hover:backdrop-blur-sm h-full w-full rounded-lg flex items-center justify-center">
+                    <h2 id="ls" class="font-bold text-3xl text-white hidden">Langsuan</h2>
+                </div>
             </div>
         </a>
-        <div>
-            
-        </div>
+        
+
+        <a href="./kmitl.html">
+            <div  class="mx-4 my-4 bg-cover bg-no-repeat bg-[url('./image/kmitl.jpg')] bg-neutral-700 rounded-xl outline-4 outline-white shadow-lg shadow-white hover:shadow-orange-500" style="width: 400px; height: 200px;">
+                <div onmouseenter="showKMITL()" onmouseleave="hideKMITL()" class="้hover:block hover:bg-neutral-700/40 hover:backdrop-blur-sm h-full w-full rounded-lg flex items-center justify-center">
+                    <h2 id="kmitl" class="font-bold text-3xl text-white hidden">KMITL Chumphom</h2>
+                </div>
+            </div>
+        </a>
+        
     </div>
 
     <script>
@@ -36,6 +46,13 @@
       
         function hideLS() {
           document.getElementById('ls').classList.add('hidden');
+        }
+        function showKMITL() {
+          document.getElementById('kmitl').classList.remove('hidden');
+        }
+      
+        function hideKMITL() {
+          document.getElementById('kmitl').classList.add('hidden');
         }
       </script>
 </body>

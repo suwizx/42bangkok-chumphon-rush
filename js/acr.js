@@ -16,6 +16,7 @@ function conCheck(){
 }
 
 function acri(){
+    console.log(vacri.style.display)
     if (vacri.style.display == "block"){
         vacri.style.display = "none"
     }
